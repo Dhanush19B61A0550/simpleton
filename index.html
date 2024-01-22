@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16rem;
+}
+
+nav {
+    background-color: #ff7070;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    float: left;
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.card-container{
+    display: flex;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, rgba(244,245,188,1) 0%, rgba(232,165,228,1) 100%);
+}
+
+.card-left{
+    width: 50%;
+    padding: 60px;
+}
+
+.card-left h1{
+    font-size: 40px;
+    letter-spacing: .3rem;
+    padding-bottom: 40px;
+}
+
+.card-left p{
+    width: 75%;
+    font-size: 18px;
+    line-height: 26.25px;
+    padding-bottom: 40px;
+}
+
+.card-left button{
+    background-color: #ff7070;
+    color: white;
+    outline: white;
+    font-size: 18px;
+    padding: 10px 50px;
+}
+
+.card-right{
+    width: 65%;
+}
+
+.side{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cardside-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardside-right{
+    width: 50%;
+}
+
+.cardside-cont{
+    background-color: #fd8383;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 65%;
+}
+
+h4{
+    font-weight: 400;
+    max-width: 100%;
+    height: auto;
+}
+
+.cardside-cont h1{
+    font-size: 40px;
+    letter-spacing: .5rem;
+    padding: 30px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.cardside-cont a{
+    color: black;
+    text-decoration: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+  body{
+    margin: 0;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav img {
+    display: inline;
+  }
+  .card-left{
+    padding: 20px;
+  }
+  .card-left p{
+    width: 95%;
+  }
+    .card-container {
+        flex-direction: column;
+      }
+    
+      .card-left,
+      .card-right {
+        width: 100%;
+      }
+      .cardside-cont{
+        width: 85%;
+      }
+
+      .cont{
+        justify-content: center;
+      }
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#order">Order</a>
+      <a href="#food">Food</a>
+      <a href="#restaurants">Restaurants</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact Us</a>
+      <img src="https://res.cloudinary.com/dcjpuwiph/image/upload/v1705858492/hkarc8vkugumquvn3m5f.png" alt="Image"  width="30px" height="30px"/>
+    </nav>
+    <section class="card-container">
+      <div class="card-left">
+        <h1>LOREM IPSUM</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+id est vitae dolor rhoncus tristique. Maecenas metus quam,
+rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+Sed pulvinar, massa ac porta viverra.
+        </p>
+        <button>Click Me</button>
+      </div>
+      <div class="card-right">
+        <img src="https://res.cloudinary.com/dcjpuwiph/image/upload/v1705858492/qah3x3q0ypkxtbjytzfe.jpg" alt="Image" width="100%" height="100%"/>
+      </div>
+    </section>
+    <br/>
+    <section class="card-container">
+      <div class="card-left side">
+        <div class="cardside-left">
+          <img src="https://res.cloudinary.com/dcjpuwiph/image/upload/v1705858492/e23u58anshrtk9cfkzzw.avif" alt="Image" width="80%" height="50%"/>
+          <br/>
+          <img src="https://res.cloudinary.com/dcjpuwiph/image/upload/v1705858492/y5clfjatr68lmskh1dam.avif" alt="Image"width="80%" height="50%"/>
+        </div>
+        <div class="cardside-right">
+          <img src="https://res.cloudinary.com/dcjpuwiph/image/upload/v1705858492/zhtfi7mwmhzbvtzazlua.avif" alt="Image" width="80%" height="100%"/>
+        </div>
+      </div>
+      <div class="card-right cont">
+        <div class="cardside-cont">
+          <h4>LOREM IPSUM</h4>
+          <h1>LOREM IPSUM
+            SET ADEMIR</h1>
+            <a href="#">Click ></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
